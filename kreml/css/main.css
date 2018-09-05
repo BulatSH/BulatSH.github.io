@@ -1,0 +1,149 @@
+/* Первый экран */
+
+body {
+  font-family: Circe, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: url(../images/header-bg.png) no-repeat center top / cover;
+}
+
+.logo {
+  margin-top: 39px;
+  margin-bottom: 90px;
+  width: 100%;
+}
+
+.form {
+  margin-bottom: 239.8px;
+}
+
+.support {
+  display: block;
+  margin: 0 auto;
+}
+
+.user-icon {
+  position: absolute;
+  margin-top: 42px;
+  margin-left: 55px;
+}
+
+.lock-icon {
+  position: absolute;
+  margin-top: 117px;
+  margin-left: 55px;
+}
+
+.enter-form {
+  background:rgba(255,255,255,0.09);
+  border-radius: 7px;
+  margin-top: -55px;
+  padding: 82.5px 43px 0 43px;
+}
+
+.input-form {
+  box-shadow: 0 0 10px -5px #b37d08;
+  font-size: 15px;
+  padding: 16px 0 16px 41.25px;
+  width: 100%;
+}
+
+.input-form:first-child {
+  margin-bottom: 22px;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.form-color {
+  background:rgba(255,255,255,0.82);
+  border: none;
+}
+
+input[type="checkbox"] { 
+  display: none; 
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.remember {
+  margin-top: 20px;
+}
+
+label {
+  color: #ecebeb;
+}
+
+.button {
+  background:url(../images/button.png) no-repeat center top / cover;
+  border: none;
+  color: #ecebeb;
+  border-radius: 7px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 26.4px;
+  margin-bottom: 23.1px;
+  width: 100%;
+  margin-top: -25px;
+}
+
+.button:hover {
+  background:url(../images/button-invert.png) no-repeat center top / cover;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+a {
+  color: #ecebeb;
+  border-bottom: 1px dotted #ecebeb;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #fff;
+}
+
+li {
+  margin-bottom: 22px;
+}

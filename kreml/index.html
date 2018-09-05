@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KREML</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8 col-md-6 col-lg-4">
+          <img src="images/logo.png" alt="logo" class="logo">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 col-lg-4">
+          <div class="form"><!--sdfds-->
+            <img src="images/support.png" alt="support" class="support">
+            <img src="images/user-icon.png" alt="user-icon" class="user-icon">
+            <img src="images/lock-icon.png" alt="lock-icon" class="lock-icon">
+            <form action="#" id="form" method="post" class="enter-form">
+              <input type="text" name="login" placeholder="Ваше имя или e-mail" class="input-form form-color" required>
+              <br>
+              <input type="password" name="password" placeholder="Пароль" class="input-form form-color" required>
+              <br>
+              <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+              <label for="checkbox" class="remember">Запомнить меня</label>
+              <br>
+              <input type="submit" value="Войти" class="button">
+              <ul class="d-flex">
+                <li><a href="#forgot">Забыли пароль?</a></li>
+                <li class="ml-auto"><a href="#registration">Регистрация</a></li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="js/jquery.validate.js"></script>
+  <script>
+    $(function(){
+     $('#form').validate();
+    });
+  </script>
+</body>
+</html>
