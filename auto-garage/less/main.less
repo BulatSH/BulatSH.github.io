@@ -1,7 +1,7 @@
 /* Спецификация */
 
 body {
-  font-family: Raleway;
+  font-family: 'MuseoSans', 'Raleway';
   padding: 0;
   margin: 0;
 }
@@ -35,6 +35,7 @@ header {
 	color: #2b2a29; 
 	cursor: pointer;
 	font-size: 16px;
+	font-weight: 500;
 	padding: 7px 45px 7px 45px; 
 	text-align: center; 
 	text-decoration: none;
@@ -46,6 +47,11 @@ header {
 
 .href-style {
 	color: #2b2a29;
+	font-family: 'Raleway';
+	font-weight: bold;
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
 	&:hover,
 	&:focus {
 		color: #2b2a29;
@@ -65,15 +71,20 @@ header {
 	padding: 5px 0 5px 0;
 	li {
 		margin-left: 25px;
+		&:first-of-type {
+			margin-top: 2px;
+		}
 		img {
-			height: 20px;
+			height: 22px;
 			margin-top: 7px;
 			margin-right: 5px;
 		}
 		a {
+			font-weight: 300;
 			color: #535252;
 			font-size: 13px;
 			text-align: right;
+			line-height: 1.2em;
 		}
 	}
 }
@@ -85,6 +96,7 @@ h1 {
 	font-weight: 600;
 	position: relative;
 	z-index: 2;
+	font-family: 'Raleway';
 	&::before {
 		content: "";
 		position: absolute;
@@ -139,7 +151,8 @@ h2 {
 		height: 16px;
 		background-color: #32a2e7;
 		z-index: -1;
-		bottom: 0;
+		top: 16px;
+		margin-left: -5px;
 	}
 }
 
@@ -188,5 +201,8 @@ hr {
 		margin-top: 45px;
 		width: 100%;
 		box-shadow: 0 0 3px #bcbcbc;
+	}
+	button {
+		margin-bottom: 0;
 	}
 }
