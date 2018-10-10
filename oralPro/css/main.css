@@ -1,0 +1,581 @@
+/*Спецификация*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+input:focus,
+button:focus,
+input:active,
+button:active {
+  outline: none;
+}
+
+h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+}
+
+.bord {
+  border: 1px solid red;
+}
+
+/*Первый экран*/
+  /*Первая секция*/
+.logo-section {
+  background-color: #fff;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.logo-section .row div:first-of-type p {
+  font-size: 46px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+
+.logo-section .row div:first-of-type p span {
+  font-weight: 700;
+  color: #e31b87;
+}
+
+.logo-section .row div:not(:first-of-type) {
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.logo-section .row div:not(:first-of-type) p {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 15px;
+  width: 130px;
+}
+
+.logo-section .row div:not(:first-of-type) img {
+  height: 46px;
+}
+
+  /*Вторая Секция*/
+
+.advantages {
+  background: radial-gradient(circle, #76e4ff, #36c1e2 80%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.price-woman {
+  position: absolute;
+  top: -40px;
+  left: -145px;
+  height: 524px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #146174;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.price p {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.price p:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.price p img {
+  margin-right: 10px;
+  height: 21px;
+}
+
+.price .to-order {
+  width: 100%;
+  background: #ffd800;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 22px;
+  padding: 18px 13px 18px 13px;
+  margin-top: 40px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.price .to-order::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #cfaa00;
+  border-radius: inherit;
+  left: 0;
+  top: 4px;
+  transform: translateZ(-1px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.valuation {
+  position: relative;
+  margin-left: 30px;
+  z-index: 2;
+}
+
+.valuation div {
+  width: 121px;
+  height: 89px;
+  background: #e31b87;
+  border-radius: 10px;
+  position: relative;
+  transform-style: preserve-3d;
+  padding-top: 12px;
+}
+
+.valuation div::before {
+  content: "";
+  position: absolute;
+  background: transparent;
+  border: 15px solid transparent;
+  border-left: 14px solid #b31168;
+  bottom: -15px;
+  transform: translateZ(-1px);
+}
+
+.valuation p {
+  margin-left: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.valuation p:first-of-type {
+  font-size: 22px;
+  color: #fff;  
+  position: relative;
+  margin-bottom: -8px;
+}
+
+.valuation p:first-of-type::before {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 1px;
+  background: #fff;
+  left: 0;
+  top: 50%;
+}
+
+.valuation p:last-of-type {
+  font-size: 30px;
+  color: #ffff00;
+}
+
+.price-woman-small {
+  display: none;
+}
+
+.valuation img {
+  position: absolute;
+  left: -80px;
+  top: 110px;
+}
+
+/*Main*/
+  /*Секция ask*/
+
+.ask {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.ask-woman {
+  position: absolute;
+  top: 20px;
+  left: -120px;
+  height: 100%;
+}
+
+h2 {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #e31b87;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 2px 10px 2px;
+  transform-style: preserve-3d;
+  margin-bottom: 40px;
+}
+
+.h2 {
+  position: relative;
+}
+
+.h2::before {
+  content: "";
+  position: absolute;
+  background: transparent;
+  border: 15px solid transparent;
+  border-left: 14px solid #b31168;
+  bottom: -15px;
+  transform: translateZ(-1px);
+}
+
+.style {
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.problem {
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 37px;
+  margin-top: 15px;
+}
+
+.ask-icon {
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  top: 50%;
+  margin-top: -30px;
+}
+
+  /*Секция to-use*/
+
+.to-use {
+  background: radial-gradient(circle, #a2d90e, #85b600 80%);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.to-use h3 {
+  color: #608400;
+}
+
+.instruction {
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  padding-top: 52px;
+  margin-top: -22px;
+  position: relative;
+}
+
+.instruction::before {
+  content: "";
+  position: absolute;
+  width: 76px;
+  height: 1px;
+  background: #fff;
+  top: 0;
+  left: 0;
+}
+
+.instruction::after {
+  content: "";
+  position: absolute;
+  width: 76px;
+  height: 1px;
+  background: #fff;
+  top: 0;
+  right: 0;
+}
+
+.instruction img {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-block {
+  position: relative;
+}
+
+.img-block::before {
+  content: "Шаг";
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  z-index: 1;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  color: #0ca3c5;
+  left: 50%;
+  top: 10px;
+  margin-left: -113px;
+}
+
+.img-block::after {
+  content: "1";
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  z-index: 1;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: italic;
+  color: #0ca3c5;
+  left: 50%;
+  top: 30px;
+  margin-left: -105px;
+}
+
+.instruction .row div:nth-of-type(2) .img-block::after {
+  content: "2";
+}
+
+.instruction .row div:last-of-type .img-block::after {
+  content: "3";
+}
+
+.instruction-p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  color: #547300;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  position: relative;
+}
+
+.instruction-p::before {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom: 10px solid white;
+  bottom: 0;
+  left: 50%;
+  margin-left: -10px;
+}
+
+  /*Секция how-order*/
+
+.how-order {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.how-order h3 {
+  color: #0ca3c5;
+}
+
+.how-order .instruction {
+  border-color: #0ca3c5;
+}
+
+.how-order .instruction::before,
+.how-order .instruction::after {
+  background: #0ca3c5;
+  width: 147px;
+}
+
+.how-order .instruction-p::before {
+  border-bottom: 10px solid #0ca3c5;
+}
+
+.how-order .instruction-p {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 70px;
+  color: #000;
+}
+
+  /*Секция reviews*/
+
+.reviews {
+  background: #9bd10b;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h4 {
+  font-weight: 700;
+  color: #608400;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  position: relative;
+  width: 380px;
+  display: block;
+  margin: 0 auto;
+}
+
+h4::before {
+  content: "";
+  position: absolute;
+  background: url(../img/message-icon.png) no-repeat;
+  width: 26px;
+  height: 24px;
+  right: -23px;
+  top: -12px;
+}
+
+/*Последний экран*/
+
+footer {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+footer p {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+}
+
+footer p:last-of-type {
+  text-decoration: underline;
+}
+
+/*Медиа запросы*/
+
+@media (min-width: 640px) {
+  .logo-section p {
+    font-size: 13px;
+  }
+
+  .logo-section .row div:not(:first-of-type) p {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 639px) {
+  .logo-section .row div:last-of-type {
+    display: none !important;
+  }
+
+  .logo-section .row div:first-of-type p {
+    font-size: 24px;
+  }
+
+  .logo-section .row div:not(:first-of-type) {
+    justify-content: flex-end;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .price .to-order::after {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .price-woman-small {
+    display: block;
+    margin-top: 12px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .valuation img {
+    left: 100px;
+    top: 15px;
+    z-index: -1;
+  }
+
+  .valuation div::before {
+    border: 15px solid transparent;
+    border-left: 14px solid #b31168;
+    bottom: -15px;
+    transform: rotate(180deg);
+    right: 0;
+  }
+
+  .ask {
+    display: none;
+  }
+
+  .to-use {
+    display: none;
+  }
+
+  .how-order {
+    display: none;
+  }
+}
+
+@media (max-width: 356px) {
+  .valuation img {
+    left: 70px;
+  }
+}
+
+@media (max-width: 959px) {
+  .price-woman {
+    display: none !important;
+  }
+
+  .ask-woman {
+    display: none !important;
+  }
+}
+
+@media (max-width: 959px) and (min-width: 639px) {
+  .valuation div {
+    margin-left: auto;
+  }
+
+  .valuation img {
+    left: -10px;
+  }
+
+  .to-use h3 {
+    font-size: 28px;
+  }
+
+  .instruction {
+    border: none;
+    margin-top: 0;
+  }
+
+  .instruction::before,
+  .instruction::after {
+    display: none;
+  }
+
+  .instruction-p::before,
+  .instruction-p::after {
+    display: none;
+  }
+
+  .how-order .instruction .row div {
+    display: flex;
+    align-items: center;
+  }
+
+  .how-order .instruction-p {
+    position: relative;
+    text-align: left;
+    top: 15%;
+  }
+}
