@@ -289,7 +289,7 @@ h2 {
 .instruction::before {
   content: "";
   position: absolute;
-  width: 76px;
+  width: 40px;
   height: 1px;
   background: #fff;
   top: 0;
@@ -299,7 +299,7 @@ h2 {
 .instruction::after {
   content: "";
   position: absolute;
-  width: 76px;
+  width: 40px;
   height: 1px;
   background: #fff;
   top: 0;
@@ -411,8 +411,6 @@ h2 {
 
 .reviews {
   background: #9bd10b;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 h4 {
@@ -425,6 +423,7 @@ h4 {
   width: 380px;
   display: block;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 h4::before {
@@ -435,6 +434,90 @@ h4::before {
   height: 24px;
   right: -23px;
   top: -12px;
+}
+
+.review-avatar {
+  display: block;
+  margin: 0 auto;
+}
+
+.review-style {
+  padding: 18px 28px 18px 28px;
+  background: #fff;
+  border-radius: 10px;
+  width: 424px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 32px;
+  position: relative;
+}
+
+.review-style::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  background: url(../img/horn.png) no-repeat;
+  top: -30px;
+  left: 50%;
+  margin-left: 40px;
+}
+
+.responsive h5 {
+  text-align: center;
+  font-weight: 700;
+  color: #0ca3c5;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.responsive {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.responsive p {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.slick-next {
+  top: 80px;
+  right: 90px;
+  width: 43px;
+  height: 43px;
+  background: url(../img/next-arrow.png) no-repeat;
+}
+
+.slick-prev {
+  top: 80px;
+  left: 90px;
+  z-index: 1;
+  width: 43px;
+  height: 43px;
+  background: url(../img/prev-arrow.png) no-repeat;
+}
+
+.slick-next:hover,
+.slick-next:active,
+.slick-next:focus {
+  background: url(../img/next-arrow.png) no-repeat;
+}
+
+.slick-prev:hover,
+.slick-prev:active,
+.slick-prev:focus {
+  background: url(../img/prev-arrow.png) no-repeat;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 0;
+}
+
+.review-woman {
+  position: absolute;
+  right: -120px;
 }
 
 /*Последний экран*/
@@ -522,6 +605,10 @@ footer p:last-of-type {
   .how-order {
     display: none;
   }
+
+  .reviews {
+    display: none;
+  }
 }
 
 @media (max-width: 356px) {
@@ -577,5 +664,25 @@ footer p:last-of-type {
     position: relative;
     text-align: left;
     top: 15%;
+  }
+
+  .review-style {
+    width: 290px;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev {
+    left: 0;
+  }
+}
+
+@media (max-width: 1201px) and (min-width: 960px) {
+  .slick-next {
+    right: 50px;
+  }
+  .slick-prev {
+    left: 50px;
   }
 }
