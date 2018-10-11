@@ -121,7 +121,34 @@ h1 {
   transform-style: preserve-3d;
 }
 
-.price .to-order::before {
+.mr-b {
+  margin-bottom: 76px;
+}
+
+.order {
+  width: 100%;
+  background: #ffd800;
+  padding: 18px 36px 18px 36px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 22px;
+  border: none;
+  position: relative;
+  color: black;
+  z-index: 2;
+}
+
+.order:hover {
+  text-decoration: none;
+  color: black;
+  background: #cfaa00;
+}
+
+.order:focus {
+  transform: translateY(2px);
+}
+
+.order::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -130,8 +157,12 @@ h1 {
   border-radius: inherit;
   left: 0;
   top: 4px;
-  transform: translateZ(-1px);
+  z-index: -1;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.price .to-order:active {
+  transform: translateY(2px);
 }
 
 .valuation {
@@ -473,7 +504,7 @@ h4::before {
 
 .responsive {
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .responsive p {
@@ -517,7 +548,61 @@ h4::before {
 
 .review-woman {
   position: absolute;
-  right: -120px;
+  left: -30px;
+  height: 537px;
+}
+
+/*Секция time*/
+
+.time {
+  background: radial-gradient(circle, #76e4ff, #36c1e2 80%);
+}
+
+.time .price-woman {
+  top: -30px;
+  height: 537px;
+}
+
+.time h1 {
+  text-align: left;
+}
+
+.time h1 span {
+  color: #b31168;
+}
+
+.timer p {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+}
+
+input::placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 20px 55px 20px 55px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 300px;
+}
+
+input[type="submit"] {
+  margin-top: 20px !important;
+}
+
+.price-woman2 {
+  position: absolute;
+  top: -30px;
+  left: -145px;
+  height: 537px;
 }
 
 /*Последний экран*/
@@ -609,6 +694,38 @@ footer p:last-of-type {
   .reviews {
     display: none;
   }
+
+  .price-woman2 {
+    display: none !important;
+  }
+
+  .white-bg {
+    background: white;
+    height: 89px;
+  }
+
+  input {
+    width: 100% !important;
+  }
+
+  .price p {
+    text-align: center;
+  }
+
+  .order {
+    display: block;
+    margin: 0 auto;
+    width: 302px;
+  }
+
+  .center {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .time h1 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 356px) {
@@ -623,6 +740,10 @@ footer p:last-of-type {
   }
 
   .ask-woman {
+    display: none !important;
+  }
+
+  .review-woman {
     display: none !important;
   }
 }
@@ -667,14 +788,39 @@ footer p:last-of-type {
   }
 
   .review-style {
-    width: 290px;
+    width: 250px;
   }
 
   .slick-next {
     right: 0;
   }
+
   .slick-prev {
     left: 0;
+  }
+
+  .price-woman2 {
+    left: -390px;
+  }
+
+  .time h1 {
+    font-size: 34px;
+  }
+
+  input[type="text"] {
+    padding: 20px 35px 20px 35px;
+  }
+
+  .wdth {
+    margin-left: -40px;
+  }
+
+  .wdth p {
+    text-align: center;
+  }
+
+  .flx {
+    margin: auto !important;
   }
 }
 
@@ -684,5 +830,10 @@ footer p:last-of-type {
   }
   .slick-prev {
     left: 50px;
+  }
+  .review-woman {
+    width: 490px;
+    height: 536px;
+    left: -30px;
   }
 }
