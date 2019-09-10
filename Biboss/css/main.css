@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img, p, a, div, button, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/bodyBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    padding: 20px 0 15px;
+}
+
+header {
+    background: url(../img/headerBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    min-height: 420px;
+    text-align: center;
+    color: #fff;
+    padding-top: 45px;
+    position: relative;
+}
+
+.container  {
+    width: 1004px;
+    margin: 0 auto;
+    padding: 0 102px;
+    background-color: #fff;
+}
+
+.header__top-title {
+    font-size: 30px;
+    line-height: 60px;
+    margin-bottom: 43px;
+}
+
+.header__bottom-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header__macBook {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 53px);
+}
+
+.header__macBook .franchise {
+    position: absolute;
+    font-family: 'Tahoma', serif;
+    color: #5c37ef;
+    text-decoration: underline;
+    line-height: 60px;
+    top: 138px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.points__inner {
+    padding-top: 260px;
+    padding-bottom: 58px;
+}
+
+.free__points-list {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.free__points-list span {
+    color: #a8a8a8;
+}
+
+.points__inner-why__points {
+    line-height: 16px;
+    text-align: center;
+    padding: 32px 0 35px;
+    background-color: #f7f8fa;
+    margin-top: 36px;
+    margin-bottom: 40px;
+}
+
+.why__points-text a {
+    color: #396ea9;
+    position: relative;
+}
+
+.why__points-text a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 49px;
+    background-color: #396ea9;
+    left: 0;
+    bottom: -2px;
+}
+
+.why__points-title {
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+.points__inner-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.points__inner-links .links__rules,
+.points__inner-links .links__cost {
+    width: 389px;
+}
+
+.links__rules-title,
+.links__cost-title {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.links__rules-list {
+    margin-left: 15px;
+}
+
+.links__rules-list li {
+    margin-bottom: 12px;
+}
+
+.points__count {
+    line-height: 36px;
+    margin-bottom: 25px;
+}
+
+.points__count .quantity {
+    color: #1ea01e;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.points__inner-form {
+    margin-top: 30px;
+}
+
+.form__inner {
+    background-color: #fff4b3;
+    border-radius: 5px;
+    padding: 30px 139px;
+}
+
+.form-title {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.input-field div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.input-field input {
+    border: 1px solid #a6acb2;
+    padding: 12px 15px;
+    border-radius: 5px;
+    width: 360px;
+    margin-bottom: 15px;
+}
+
+.input-field input,
+.input-field input::placeholder {
+    font-size: 14px;
+}
+
+.input-field label {
+    padding-top: 10px;
+}
+
+.give-link {
+    color: #fff;
+    background-color: #b6d88a;
+    font-size: 16px;
+    border: none;
+    padding: 10px 17px;
+    border-radius: 5px;
+    display: block;
+    margin-left: 162px;
+}
+
+.points__inner-last__text {
+    margin: 28px;
+}
+
+.additionally span {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+.footer-logo {
+    margin-left: 20px;
+}
+
+
+
+
+header .container,
+footer .container,
+.logo .container {
+    background-color: transparent;
+}
+
+.logo .container,
+footer .container {
+    padding: 0;
+}
