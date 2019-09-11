@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -114,13 +115,20 @@
                                 </div>
                                 <div>
                                     <label for="phone">Номер телефона</label>
-                                    <input type="text" class="phone" id="phone" name="phone" required
-                                        placeholder="Для начисления баллов и связи с Вами">
+                                    <input type="text" class="phone" pattern="^[ 0-9]+$" id="phone" name="phone" required
+                                        placeholder="Для начисления баллов и связи с Вами" minlength="11" maxlength="11">
                                 </div>
                                 <p class="phone-error">Укажите правильный телефон</p>
                                 <div>
                                     <label for="franchise-name">Название франшизы</label>
-                                    <input type="text" id="franchise-name" required placeholder="Например, Subway">
+                                    <!-- <input type="text" id="franchise-name" required placeholder="Например, Subway"> -->
+                                    <select class="js-example-basic-multiple franchise-name" name="states[]" multiple="multiple" required>
+                                        <option value="1">Проворный ткачик</option>
+                                        <option value="2">ПРОФИ-СПОРТ</option>
+                                        <option value="3">Проспект</option>
+                                        <option value="4">Проспект чудо</option>
+                                        <option value="5">Прокат пони+</option>
+                                    </select>
                                 </div>
                             </div>
                             <input type="submit" class="give-link" value="Получить ссылку">
@@ -144,27 +152,15 @@
                 <img src="img/footerLogo.jpg" alt="Логотип">
             </div>
         </div>
-
-
-
-
-        <label for="id_label_single"> Click this to highlight the single select element 
-            <select
-                class="js-example-basic-single js-states form-control" id="id_label_single">ddddd</select> 
-            </label> 
-            <label
-            for="id_label_multiple"> Click this to highlight the multiple select element 
-            <select
-                class="js-example-basic-multiple js-states form-control" id="id_label_multiple"
-                multiple="multiple">dddddd
-            </select> </label>
-
     </footer>
 </body>
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
-
+<script type="text/javascript">
+    $(document).ready(function() { $('.js-example-basic-multiple').select2(); });
+    $('.js-example-basic-multiple').select2({ placeholder: 'Select an option' });
+</script>
 
 <script type="text/javascript">
     var btn = document.querySelector('.give-link');

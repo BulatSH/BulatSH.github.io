@@ -228,13 +228,45 @@ header {
 
 .give-link {
     color: #fff;
-    background-color: #b6d88a;
+    background-color: #0d972b;
     font-size: 16px;
     border: none;
     padding: 10px 17px;
     border-radius: 5px;
     display: block;
     margin-left: 162px;
+    margin-top: 15px;
+}
+
+.franchise-name {
+    width: 360px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #f7f8fa;
+    color: #000;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    padding: 7px 15px 0 15px;
+    height: 35px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    transform: translateY(-4px);
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(195,227,176,1);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(195,227,176,1);
+    box-shadow: 0px 0px 10px 2px rgba(195,227,176,1);
+    border: 1px solid #a6acb2;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(195,227,176,1);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(195,227,176,1);
+    box-shadow: 0px 0px 10px 2px rgba(195,227,176,1);
 }
 
 .give-link-active {
