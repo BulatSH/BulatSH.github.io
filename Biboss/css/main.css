@@ -208,6 +208,24 @@ header {
     padding-top: 10px;
 }
 
+.phone-bg {
+    background-color: #eef0e5;
+}
+
+.phone-error {
+    color: #ff0000;
+    font-size: 14px;
+    line-height: 32px;
+    margin-left: 162px;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.phone-error-appeared {
+    display: block;
+}
+
 .give-link {
     color: #fff;
     background-color: #b6d88a;
@@ -217,6 +235,10 @@ header {
     border-radius: 5px;
     display: block;
     margin-left: 162px;
+}
+
+.give-link-active {
+    background-color: #0d972b;
 }
 
 .points__inner-last__text {
@@ -229,23 +251,16 @@ header {
 
 footer {
     background-color: #000;
-    padding: 20px 0;
+    padding: 20px 0 10px;
 }
 
 .footer-logo {
     margin-left: 20px;
 }
 
-
-
-
 header .container,
 footer .container,
 .logo .container {
     background-color: transparent;
-}
-
-.logo .container,
-footer .container {
     padding: 0;
 }

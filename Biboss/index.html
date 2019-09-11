@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Бибосс</title>
 </head>
@@ -99,7 +101,7 @@
                     </div>
                 </div>
                 <div class="points__inner-form">
-                    <form>
+                    <form id="#form" method="post">
                         <div class="form__inner">
                             <div class="form-title">
                                 <p>Получить ссылку</p>
@@ -107,25 +109,28 @@
                             <div class="input-field">
                                 <div>
                                     <label for="name">Ваше имя</label>
-                                    <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+                                    <input type="text" class="name" id="name" name="name" required
+                                        placeholder="Представьтесь, пожалуйста" minlength="2">
                                 </div>
                                 <div>
                                     <label for="phone">Номер телефона</label>
-                                    <input type="text" id="phone" name="phone"
+                                    <input type="text" class="phone" id="phone" name="phone" required
                                         placeholder="Для начисления баллов и связи с Вами">
                                 </div>
+                                <p class="phone-error">Укажите правильный телефон</p>
                                 <div>
                                     <label for="franchise-name">Название франшизы</label>
-                                    <input type="text" id="franchise-name" placeholder="Например, Subway">
+                                    <input type="text" id="franchise-name" required placeholder="Например, Subway">
                                 </div>
                             </div>
-                            <button type="submit" class="give-link" disabled>Получить ссылку</button>
+                            <input type="submit" class="give-link" value="Получить ссылку">
                         </div>
                     </form>
                 </div>
                 <div class="points__inner-last__text">
                     <p class="additionally">
-                        <span>Это еще не все...</span> Вы можете заработать дополнительные баллы, если разместите на своём сайте
+                        <span>Это еще не все...</span> Вы можете заработать дополнительные баллы, если разместите на
+                        своём сайте
                         новость, интервью или статью БИБОСС о Вашей компании с активной ссылкой! 50 баллов за активную
                         ссылку на новость!
                     </p>
@@ -139,7 +144,46 @@
                 <img src="img/footerLogo.jpg" alt="Логотип">
             </div>
         </div>
+
+
+
+
+        <label for="id_label_single"> Click this to highlight the single select element 
+            <select
+                class="js-example-basic-single js-states form-control" id="id_label_single">ddddd</select> 
+            </label> 
+            <label
+            for="id_label_multiple"> Click this to highlight the multiple select element 
+            <select
+                class="js-example-basic-multiple js-states form-control" id="id_label_multiple"
+                multiple="multiple">dddddd
+            </select> </label>
+
     </footer>
 </body>
 
-</html>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+
+
+<script type="text/javascript">
+    var btn = document.querySelector('.give-link');
+    var phone = document.querySelector(".phone");
+    var name = document.querySelector(".name");
+    var franchiseName = document.querySelector(".franchise-name");
+
+    btn.addEventListener('click', function () {
+        var validatePhone = function (phone) {
+            var phoneError = document.querySelector(".phone-error");
+            var phonePattern = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){11,11}(\s*)?$/;
+            if (phonePattern.test(phone.value) == false && phone.value != "") {
+                phoneError.classList.add("phone-error-appeared");
+                phone.classList.add("phone-bg");
+            } else {
+                phoneError.classList.remove("phone-error-appeared");
+                phone.classList.remove("phone-bg");
+            }
+        }
+        validatePhone(phone);
+    });
+</script>
