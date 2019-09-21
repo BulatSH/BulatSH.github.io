@@ -47,6 +47,7 @@ header {
     padding-left: 50px;
     padding-right: 128px;
     margin-left: 35px;
+    font-style: 18px;
 }
 
 .header__inner-logo::before {
