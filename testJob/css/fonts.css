@@ -1,0 +1,19 @@
+/* Шрифты */
+
+@font-face { 
+    font-family: "HelveticaNeue";
+    src: url(../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?) format("eot"), 
+         url(../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.woff) format("woff"), 
+         url(../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: "HelveticaNeue";
+    src: url(../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.eot?) format("eot"), 
+         url(../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.woff) format("woff"), 
+         url(../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
