@@ -79,6 +79,8 @@ header {
 .main {
     background-color: #becc23;
     height: calc(100vh - (60px + 80px));
+    height: -webkit-calc(100vh - (60px + 80px));
+    height: -moz-calc(100vh - (60px + 80px));
     position: relative;
     z-index: 1;
 }
