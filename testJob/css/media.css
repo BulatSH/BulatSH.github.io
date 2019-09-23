@@ -193,7 +193,7 @@
     }
 }
 
-@media screen and (min-width: 770px) and (max-height: 618px) {
+@media screen and (max-height: 618px) {
     .container {
         width: 310px;
     }
@@ -322,7 +322,7 @@
     }
 
     .main__inner-text {
-        margin-left: 200px;
+        margin-left: 155px;
     }
 }
 
