@@ -12,6 +12,8 @@
 
     .main {
         height: calc(100vh - (60px + 120px));
+        height: -webkit-calc(100vh - (60px + 120px));
+        height: -moz-calc(100vh - (60px + 120px));
     }
 
     .main__inner {
@@ -152,6 +154,8 @@
 
     .main {
         height: calc(100vh - (60px + 75px));
+        height: -webkit-calc(100vh - (60px + 75px));
+        height: -moz-calc(100vh - (60px + 75px));
     }
 
     .main__inner {
