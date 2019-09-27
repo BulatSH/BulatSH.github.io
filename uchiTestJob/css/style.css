@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+body, div, header, section, footer, a, p, button, h1, h2,h3, h4, h5, h6, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.formula {
+    padding-top: 30px;
+}
+
+.formula__inner {
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.answers__list {
+    display: flex;
+}
+
+.answer {
+    margin-right: 30px;
+    border: 2px solid #3a76a3;
+    color: #3a76a3;
+    padding: 7px 20px 3px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.answer__hover {
+    background-color: #f2f2f2;
+}
+
+.answer__select {
+    background-color: #3a76a3;
+    color: #fff;
+}
+
+.answer__error {
+    background-color: #f05a69;
+    color: #fff;
+}
+
+.answers__list .answer:last-child {
+    margin-right: 0;
+}
+
+#btn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #70c5e2;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+.btn__disabled {
+    background-color: #b9e0ed;
+}
+
+.active__btn-hover {
+    background-color: #39b6e2;
+}
+
+.btn__error {
+    background-color: #f05a69;
+}
+
+.btn__right {
+    background-color: #8fbe83;
+}
