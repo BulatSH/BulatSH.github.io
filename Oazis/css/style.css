@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none; }
+
+button, a {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+div, p, a, header, footer, section, ul, li, body {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 600;
+  font-style: normal; }
+
+.container {
+  width: 1366px;
+  margin: 0 auto; }
+
+.d-flex {
+  display: flex; }
+
+header {
+  background-color: #f3f1f1;
+  min-height: 110px; }
+
+.header__wrapper {
+  display: flex;
+  align-items: center; }
+  .header__wrapper .logo {
+    display: flex;
+    align-items: center; }
+    .header__wrapper .logo img {
+      width: 54px;
+      height: 60px;
+      margin-bottom: 20px;
+      margin-right: 15px; }
+    .header__wrapper .logo h1 {
+      font-size: 54px;
+      line-height: 19.44px;
+      letter-spacing: -0.1px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center; }
+      .header__wrapper .logo h1 span {
+        font-size: 14px;
+        line-height: 20px;
+        width: 120px;
+        margin-left: 15px;
+        margin-bottom: 5px; }
+  .header__wrapper .contacts {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 85px; }
+    .header__wrapper .contacts .contacts__style {
+      text-align: right; }
+      .header__wrapper .contacts .contacts__style:last-child {
+        margin-left: 95px; }
+      .header__wrapper .contacts .contacts__style .adress, .header__wrapper .contacts .contacts__style .phone {
+        font-size: 24px;
+        line-height: 26px; }
+      .header__wrapper .contacts .contacts__style .time, .header__wrapper .contacts .contacts__style .d-service {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400; }
+  .header__wrapper .btn {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #f4f8ee;
+    background-color: #5c9800;
+    text-align: center;
+    padding: 13px 55px 9px 20px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    position: relative; }
+    .header__wrapper .btn:before {
+      content: "";
+      position: absolute;
+      background: url(../img/buttonArrow.png) no-repeat;
+      width: 30px;
+      height: 30px;
+      right: 10px;
+      top: 8px;
+      transition: 0.2s; }
+    .header__wrapper .btn:hover {
+      background-color: #7aa345; }
+      .header__wrapper .btn:hover:before {
+        transform: rotate(90deg); }
+
+/*# sourceMappingURL=style.css.map */

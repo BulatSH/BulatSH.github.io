@@ -1,0 +1,98 @@
+*
+    box-sizing: border-box
+
+ul, li
+    list-style: none
+
+button, a
+    outline: none
+
+a
+    text-decoration: none
+
+div, p, a, header, footer, section, ul, li, body
+    padding: 0
+    margin: 0
+
+body
+    font-family: 'ProximaNova', sans-serif
+    font-weight: 600
+    font-style: normal
+
+.container
+    width: 1366px
+    margin: 0 auto
+
+.d-flex
+    display: flex
+
+header
+    background-color: #f3f1f1
+    min-height: 110px
+
+
+.header__wrapper
+    display: flex
+    align-items: center
+    .logo
+        display: flex
+        align-items: center
+        img
+            width: 54px
+            height: 60px
+            margin:
+                bottom: 20px
+                right: 15px
+        h1
+            font-size: 54px
+            line-height: 19.44px
+            letter-spacing: -0.1px
+            text-transform: uppercase
+            display: flex
+            align-items: center
+            span
+                font-size: 14px
+                line-height: 20px
+                width: 120px
+                margin-left: 15px
+                margin-bottom: 5px
+    .contacts
+        display: flex
+        margin:
+            left: 100px
+            right: 85px
+        .contacts__style
+            text-align: right
+            &:last-child
+                margin-left: 95px
+            .adress, .phone
+                font-size: 24px
+                line-height: 26px
+            .time, .d-service
+                font-size: 16px
+                line-height: 26px
+                font-weight: 400
+    .btn
+        font-size: 14px
+        line-height: 26px
+        font-weight: 700
+        color: #f4f8ee
+        background-color: #5c9800
+        text-align: center
+        padding: 13px 55px 9px 20px
+        text-transform: uppercase
+        border-radius: 30px
+        position: relative
+        &:before
+            content: ""
+            position: absolute
+            background: url(../img/buttonArrow.png) no-repeat
+            width: 30px
+            height: 30px
+            right: 10px
+            top: 8px
+            transition: 0.2s
+        &:hover
+            background-color: #7aa345
+            &:before
+                transform: rotate(90deg)
