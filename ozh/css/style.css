@@ -1,0 +1,255 @@
+body {
+    width: 100%;
+    background-color: #020000;
+    font-family: Georgia, serif;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+header a {
+    align-self: center;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+header a img {
+    width: 100%;
+    max-width: 980px;
+}
+
+main {
+    padding-top: 20px;
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.menu {
+    font-size: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 920px;
+    margin-bottom: 40px;
+}
+
+.menu a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.15s;
+}
+
+.menu a:hover {
+    color: #d8c35c;
+}
+
+.pictures {
+    width: 100%;
+}
+
+.pictures-slider {
+    width: 100%;
+}
+
+.slide-wrap {
+    width: 100%;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-wrap .slide-img-wrap {
+    overflow: hidden;
+    max-height: 470px;
+    height: 100%;
+    /* 370 470 */
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-wrap .slide-img-wrap img {
+    transition: 0.4s;
+    cursor: pointer;
+    width: 100%;
+}
+
+.slide-wrap .slide-img-wrap:first-child,
+.slide-wrap .slide-img-wrap:nth-child(2),
+.slide-wrap .slide-img-wrap:nth-child(3) {
+    margin-bottom: 2%;
+}
+
+.slide-wrap .slide-img-wrap img:hover {
+    transform: scale(1.05)
+}
+
+.slick-prev,
+.slick-next {
+    position: relative;
+}
+
+.slick-prev {
+    left: -50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 46px;
+}
+
+.slick-next {
+    right: -50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    width: 30px;
+    height: 46px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 6px;
+    background-color: grey !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateY(-10px) rotate(-45deg);
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.slick-prev::after,
+.slick-next::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 6px;
+    background-color: grey !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateY(10px) rotate(45deg);
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.slick-prev:hover::before,
+.slick-next:hover::before,
+.slick-prev:hover::after,
+.slick-next:hover::after {
+    background-color: white !important;
+}
+
+h2 {
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news {
+    margin-bottom: 140px;
+}
+
+.news p {
+    color: #fff;
+    font-size: 18px;
+    max-width: 684px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.contacts {
+    margin-bottom: 180px;
+}
+
+.contacts-form {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.necessarilly::after {
+    content: "*";
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+    width: 100%;
+    font-size: 20px;
+    color: #7b736f;
+    border: none;
+    border-bottom-right-radius: 10px;
+    padding: 5px 15px;
+}
+
+.contacts-form label {
+    color: #7b736f;
+    padding: 12px;
+    font-size: 20px;
+}
+
+.contacts-form textarea {
+    height: 130px;
+    resize: none;
+}
+
+.contacts-form button {
+    color: #fcfcfc;
+    background-color: rgba(123, 115, 111, 1);
+    padding: 5px;
+    font-size: 20px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 0.15s;
+    margin-left: auto;
+    margin-top: 16px;
+}
+
+.contacts-form button:hover {
+    background-color: #ad851e;
+}
+
+footer {
+    height: 50px;
+    background-color: #c97d7d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+}
+
+footer span {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+}
