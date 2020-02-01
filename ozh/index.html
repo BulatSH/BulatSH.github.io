@@ -52,7 +52,7 @@
                 </li>
             </ul>
         </nav>
-        <button class="phone-menu-btn" id="phone-menu-btn" type="button">Тест</button>
+        <button class="phone-menu-btn" id="phone-menu-btn" type="button"></button>
         <section class="pictures">
             <h2>
                 Картины
@@ -148,12 +148,16 @@
         phoneMenuBtn.addEventListener('click', function() {
             if (count == 0) {
                 body.style.overflow = "hidden";
+                menuWrap.style.opacity = "1"
                 menuWrap.style.right = "0";
+                phoneMenuBtn.classList.add('close');
                 count = 1;
                 console.log(count);
             } else if (count == 1) {
                 body.style.overflowY = "auto";
                 menuWrap.style.right = "-100vw";
+                menuWrap.style.opacity = "0"
+                phoneMenuBtn.classList.remove('close');
                 count = 0;
                 console.log(count);
             }
