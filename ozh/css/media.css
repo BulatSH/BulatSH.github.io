@@ -119,6 +119,12 @@
 
 @media all and (orientation: landscape) {
     header {
-        height: 90vh;
+        height: 74vh;
+    }
+    header a {
+        width: 60%;
+    }
+    header a img {
+        max-width: 600px;
     }
 }
