@@ -119,6 +119,6 @@
 
 @media all and (orientation: landscape) {
     header {
-        height: 100vh;
+        height: 90vh;
     }
 }
