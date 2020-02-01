@@ -325,13 +325,21 @@ h2 {
 
 .contacts-form {
     width: 90%;
-    max-width: 768px;
+    max-width: 500px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    height: 50px;
+}
+
+h3 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 16px;
 }
 
 .necessarilly::after {
@@ -342,11 +350,11 @@ h2 {
 
 .contacts-form input,
 .contacts-form textarea {
-    width: 100%;
+    width: 80%;
     font-size: 20px;
     color: #7b736f;
     border: none;
-    border-bottom-right-radius: 10px;
+    border-radius: 5px;
     padding: 5px 15px;
 }
 
@@ -364,17 +372,45 @@ h2 {
 
 .contacts-form button {
     color: #fcfcfc;
-    background-color: rgba(123, 115, 111, 1);
+    background-color: grey;
     padding: 5px;
     font-size: 20px;
-    border-bottom-right-radius: 10px;
     cursor: pointer;
     border: none;
     -webkit-transition: 0.15s;
     -o-transition: 0.15s;
     transition: 0.15s;
     margin-left: auto;
-    margin-top: 16px;
+    width: 14%;
+    position: relative;
+}
+
+.contacts-form button::after {
+    content: '';
+    width: 12px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transform: translateY(-3px) rotate(45deg);
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.contacts-form button::before {
+    content: '';
+    width: 12px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transform: translateY(3px) rotate(-45deg);
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 }
 
 .contacts-form button:hover {
