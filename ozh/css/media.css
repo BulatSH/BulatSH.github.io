@@ -101,9 +101,6 @@
     nav:last-of-type .menu-item:not(:last-child) {
         margin-bottom: 40px;
     }
-    body {
-        overflow-x: hidden;
-    }
 }
 
 @media all and (max-width: 550px) {
