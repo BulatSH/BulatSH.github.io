@@ -30,6 +30,10 @@ main {
     margin: 0 auto;
 }
 
+.phone-menu-btn {
+    display: none;
+}
+
 .menu {
     font-size: 40px;
     color: #fff;

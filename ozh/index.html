@@ -31,27 +31,28 @@
         <nav>
             <ul class="menu">
                 <li class="menu-item">
-                    <a href="news.html">
+                    <a href="#">
                         Новости
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="artists.html">
+                    <a href="#">
                         Художники
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="exgibitions.html">
+                    <a href="#">
                         Выставки
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="contacts.html">
+                    <a href="#">
                         Контакты
                     </a>
                 </li>
             </ul>
         </nav>
+        <button class="phone-menu-btn" id="phone-menu-btn" type="button">Тест</button>
         <section class="pictures">
             <h2>
                 Картины
@@ -137,6 +138,25 @@
             speed: 1000,
             fade: true,
             cssEase: 'linear'
+        });
+    </script>
+    <script type="text/javascript">
+        var body = document.querySelector('body');
+        var menuWrap = body.querySelector('nav');
+        var phoneMenuBtn = body.querySelector('#phone-menu-btn');
+        var count = 0;
+        phoneMenuBtn.addEventListener('click', function() {
+            if (count == 0) {
+                body.style.overflow = "hidden";
+                menuWrap.style.right = "0";
+                count = 1;
+                console.log(count);
+            } else if (count == 1) {
+                body.style.overflowY = "auto";
+                menuWrap.style.right = "-100vw";
+                count = 0;
+                console.log(count);
+            }
         });
     </script>
 </body>
