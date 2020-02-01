@@ -176,7 +176,6 @@
         phoneMenuBtn.addEventListener('click', function() {
             if (document.body.clientWidth <= 640) {
                 if (count == 0) {
-                    document.querySelector('html').style.overflow = "hidden";
                     body.style.overflow = "hidden";
                     menuWrap.style.opacity = "1"
                     menuWrap.style.width = "100%";
@@ -184,7 +183,6 @@
                     count = 1;
                     console.log(count);
                 } else if (count == 1) {
-                    document.querySelector('html').style.overflowY = "auto";
                     body.style.overflowY = "auto";
                     menuWrap.style.width = "0";
                     menuWrap.style.opacity = "0"
