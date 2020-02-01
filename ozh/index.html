@@ -172,10 +172,12 @@
         var menuWrap = body.querySelector('nav:last-of-type');
         var phoneMenuBtn = body.querySelector('#phone-menu-btn');
         var btnWrap = body.querySelector('.btn-wrap');
+        var htmlDoc = document.querySelector('html');
         var count = 0;
         phoneMenuBtn.addEventListener('click', function() {
             if (document.body.clientWidth <= 640) {
                 if (count == 0) {
+                    htmlDoc.style.overflow = "hidden";
                     body.style.overflow = "hidden";
                     menuWrap.style.opacity = "1"
                     menuWrap.style.width = "100%";
@@ -183,6 +185,7 @@
                     count = 1;
                     console.log(count);
                 } else if (count == 1) {
+                    htmlDoc.style.overflow = "auto";
                     body.style.overflowY = "auto";
                     menuWrap.style.width = "0";
                     menuWrap.style.opacity = "0"
