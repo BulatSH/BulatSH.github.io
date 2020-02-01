@@ -128,3 +128,12 @@
         max-width: 600px;
     }
 }
+
+@media all and (max-width: 768px) {
+    .news {
+        margin-bottom: 100px;
+    }
+    .contacts {
+        margin-bottom: 100px;
+    }
+}
