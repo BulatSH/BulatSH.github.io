@@ -21,7 +21,7 @@
 <body>
     <header>
         <a class="logo">
-            <img src="img/logo.png" alt="Логотип" title="Логотип">
+            <img src="img/logo.jpg" alt="Логотип" title="Логотип">
         </a>
     </header>
     <main>
@@ -86,7 +86,7 @@
             </h2>
             <!-- slider -->
             <div class="pictures-slider">
-                <div class="slide-wrap">
+                <!-- <div class="slide-wrap">
                     <div class="slide-img-wrap">
                         <img src="img/cat.jpg" alt="Котик" title="Котик">
                     </div>
@@ -119,8 +119,67 @@
                     <div class="slide-img-wrap">
                         <img src="img/cat.jpg" alt="Котик" title="Котик">
                     </div>
+                </div> -->
+                <div class="slider-img-wrap">
+                    <img src="img/003986b2-e676-4753-8186-4f04f1e0fb2b.JPG" alt="" />
                 </div>
-            </div>
+                <div class="slider-img-wrap">
+                    <img src="img/02e2f549-da72-4df0-af0e-1ca25fe33dc8.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/0f6bc780-0a04-4c92-bc0f-ad1e49de2850.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/12764e51-2f2e-424d-a827-54d6fc72bf4b.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/1325cfdb-3a19-420d-a429-46b2eae25ca9.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/153ba48d-abde-4339-b28c-3181c81c6bf6.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/1633e954-3e31-411e-81d8-4fb2ab1ce72e.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/16487302-cbed-4569-99bd-c5a4199a3168.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/1da86fec-7afa-47b4-9b43-7cb931641aea.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/2a98daa2-c487-47e5-bc91-cc18a6ac1e5c.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/32ab51a6-7a4c-4ae5-abe5-8324540d82ae.JPG" alt=""> /
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/330c51cf-ced8-4f58-a586-b5b38797078c.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/365d4eb5-f873-4408-ad93-b6c2459a9de3.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/43d842d4-f59e-40b7-bb99-f2a88f657459.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/44fd31a5-8cbf-407f-b095-1035e408fc69.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/46036336-039f-4dd2-a428-c057dffa5858.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/485ba96e-bc71-494d-a5a3-4d9d2b62a07c.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/48f4cb14-45f5-4e03-a8d6-309c10cc661e.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/49e627b9-a146-40dc-a156-8ae0cbf77b02.JPG" alt="" />
+                </div>
+                <div class="slider-img-wrap">
+                    <img src="img/4a257648-2730-441c-a154-7671a3bfcaf4.JPG" alt="" />
+                </div>
             </div>
         </section>
         <section class="news">
@@ -160,11 +219,37 @@
 
     <script type="text/javascript">
         $('.pictures-slider').slick({
-            dots: true,
             infinite: true,
-            speed: 1000,
-            fade: true,
-            cssEase: 'linear'
+            speed: 400,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 4,
+            slidesToScroll: 3,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
     </script>
     <script type="text/javascript">

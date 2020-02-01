@@ -116,3 +116,9 @@
         top: 32px;
     }
 }
+
+@media all and (orientation: landscape) {
+    header {
+        height: 100%;
+    }
+}
