@@ -52,7 +52,10 @@
                 </li>
             </ul>
         </nav>
-        <button class="phone-menu-btn" id="phone-menu-btn" type="button"></button>
+        <div class="btn-wrap">
+            <button class="phone-menu-btn" id="phone-menu-btn" type="button">
+            </button>
+        </div>
         <section class="pictures">
             <h2>
                 Картины
@@ -144,20 +147,21 @@
         var body = document.querySelector('body');
         var menuWrap = body.querySelector('nav');
         var phoneMenuBtn = body.querySelector('#phone-menu-btn');
+        var btnWrap = body.querySelector('.btn-wrap');
         var count = 0;
         phoneMenuBtn.addEventListener('click', function() {
             if (count == 0) {
                 body.style.overflow = "hidden";
                 menuWrap.style.opacity = "1"
                 menuWrap.style.width = "100%";
-                phoneMenuBtn.classList.add('close');
+                btnWrap.classList.add('close');
                 count = 1;
                 console.log(count);
             } else if (count == 1) {
                 body.style.overflowY = "auto";
                 menuWrap.style.width = "0";
                 menuWrap.style.opacity = "0"
-                phoneMenuBtn.classList.remove('close');
+                btnWrap.classList.remove('close');
                 count = 0;
                 console.log(count);
             }

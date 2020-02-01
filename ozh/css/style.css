@@ -36,7 +36,7 @@ main {
     margin: 0 auto;
 }
 
-.phone-menu-btn {
+.btn-wrap {
     display: none;
     background-color: #fff;
     border: none;
@@ -46,25 +46,37 @@ main {
     right: 40px;
     z-index: 9;
     top: 40px;
-    opacity: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.phone-menu-btn {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    left: 0;
+    top: -8px;
+    width: 28px;
+    border: none;
+    height: 20px;
+    z-index: 99999;
     cursor: pointer;
 }
 
-.phone-menu-btn::before,
-.phone-menu-btn::after {
+.btn-wrap::before,
+.btn-wrap::after {
     content: "";
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 3px;
+    width: 28px;
     background-color: #fff;
-    bottom: 10px;
+    bottom: 8px;
     right: 0;
     transition: 0.3s ease-out;
-    z-index: -1;
 }
 
-.phone-menu-btn::after {
-    top: 10px;
+.btn-wrap::after {
+    top: 8px;
 }
 
 .close {
@@ -72,11 +84,11 @@ main {
 }
 
 .close::before {
-    transform: translateY(10px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
 }
 
 .close::after {
-    transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 .menu {

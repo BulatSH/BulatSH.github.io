@@ -66,7 +66,7 @@
 }
 
 @media all and (max-width: 640px) {
-    .phone-menu-btn {
+    .btn-wrap {
         display: block;
     }
     nav {
@@ -74,10 +74,10 @@
         top: 0;
         right: 0;
         width: 0;
-        z-index: 9999;
+        z-index: 9;
         background-color: rgba(0, 0, 0);
         height: 100vh;
-        width: 100%;
+        width: 0;
         -webkit-transition: 0.3s ease-out;
         -o-transition: 0.3s ease-out;
         transition: 0.3s ease-out;
@@ -97,8 +97,21 @@
     .menu-item:not(:last-child) {
         margin-bottom: 40px;
     }
-    html,
     body {
         overflow-x: hidden;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .btn-wrap {
+        right: 35px;
+        top: 35px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .btn-wrap {
+        right: 32px;
+        top: 32px;
     }
 }
