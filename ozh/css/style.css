@@ -333,6 +333,7 @@ h2 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     height: 50px;
+    position: relative;
 }
 
 h3 {
@@ -350,12 +351,13 @@ h3 {
 
 .contacts-form input,
 .contacts-form textarea {
-    width: 80%;
+    width: 100%;
     font-size: 20px;
     color: #7b736f;
     border: none;
     border-radius: 5px;
-    padding: 5px 15px;
+    padding: 5px 80px 5px 15px;
+    box-sizing: border-box;
 }
 
 .contacts-form label {
@@ -381,8 +383,12 @@ h3 {
     -o-transition: 0.15s;
     transition: 0.15s;
     margin-left: auto;
-    width: 14%;
-    position: relative;
+    width: 60px;
+    position: absolute;
+    right: 0;
+    top: -2px;
+    height: 107%;
+    border-radius: 5px;
 }
 
 .contacts-form button::after {
