@@ -14,7 +14,7 @@ header {
 header a {
     align-self: center;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
     text-align: center;
 }
 
@@ -37,7 +37,7 @@ main {
     justify-content: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
     max-width: 920px;
     margin-bottom: 40px;
 }
@@ -57,7 +57,8 @@ main {
 }
 
 .pictures-slider {
-    width: 100%;
+    width: 88%;
+    margin: 0 auto;
 }
 
 .slide-wrap {
@@ -74,7 +75,7 @@ main {
     max-height: 470px;
     height: 100%;
     /* 370 470 */
-    width: 100%;
+    width: 32%;
     max-width: 370px;
     display: flex;
     justify-content: center;
@@ -176,10 +177,12 @@ h2 {
     color: #fff;
     font-size: 18px;
     max-width: 684px;
-    width: 100%;
+    width: 94%;
     margin: 0 auto;
     text-align: center;
     line-height: 1.3;
+    font-family: sans-serif;
+    font-weight: 300;
 }
 
 .contacts {
@@ -187,7 +190,7 @@ h2 {
 }
 
 .contacts-form {
-    width: 100%;
+    width: 90%;
     max-width: 768px;
     margin: 0 auto;
     display: flex;
@@ -214,6 +217,7 @@ h2 {
     color: #7b736f;
     padding: 12px;
     font-size: 20px;
+    font-family: sans-serif;
 }
 
 .contacts-form textarea {
@@ -246,10 +250,12 @@ footer {
     align-items: center;
     font-size: 14px;
     width: 100%;
+    font-family: sans-serif;
+    font-weight: 300;
 }
 
 footer span {
     max-width: 640px;
-    width: 100%;
+    width: 94%;
     margin: 0 auto;
 }
