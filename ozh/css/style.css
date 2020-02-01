@@ -91,6 +91,10 @@ main {
     transform: translateY(-8px) rotate(-45deg);
 }
 
+nav:last-of-type {
+    display: none;
+}
+
 .menu {
     font-size: 40px;
     color: #fff;

@@ -52,6 +52,30 @@
                 </li>
             </ul>
         </nav>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#">
+                        Новости
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        Художники
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        Выставки
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="btn-wrap">
             <button class="phone-menu-btn" id="phone-menu-btn" type="button">
             </button>
@@ -145,27 +169,33 @@
     </script>
     <script type="text/javascript">
         var body = document.querySelector('body');
-        var menuWrap = body.querySelector('nav');
+        var menuWrap = body.querySelector('nav:last-of-type');
         var phoneMenuBtn = body.querySelector('#phone-menu-btn');
         var btnWrap = body.querySelector('.btn-wrap');
         var count = 0;
         phoneMenuBtn.addEventListener('click', function() {
-            if (count == 0) {
-                body.style.overflow = "hidden";
-                menuWrap.style.opacity = "1"
-                menuWrap.style.width = "100%";
-                btnWrap.classList.add('close');
-                count = 1;
-                console.log(count);
-            } else if (count == 1) {
-                body.style.overflowY = "auto";
-                menuWrap.style.width = "0";
-                menuWrap.style.opacity = "0"
-                btnWrap.classList.remove('close');
-                count = 0;
-                console.log(count);
+            if (document.body.clientWidth <= 640) {
+                if (count == 0) {
+                    body.style.overflow = "hidden";
+                    menuWrap.style.opacity = "1"
+                    menuWrap.style.width = "100%";
+                    btnWrap.classList.add('close');
+                    count = 1;
+                    console.log(count);
+                } else if (count == 1) {
+                    body.style.overflowY = "auto";
+                    menuWrap.style.width = "0";
+                    menuWrap.style.opacity = "0"
+                    btnWrap.classList.remove('close');
+                    count = 0;
+                    console.log(count);
+                }
             }
         });
+        if (document.body.clientWidth > 640) {
+            menuWrap.style.width = '100%';
+            document.querySelector('.menu').style.width = '90%';
+        }
     </script>
 </body>
 

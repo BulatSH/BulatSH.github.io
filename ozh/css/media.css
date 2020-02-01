@@ -66,10 +66,14 @@
 }
 
 @media all and (max-width: 640px) {
+    nav:first-of-type {
+        display: none;
+    }
     .btn-wrap {
         display: block;
     }
-    nav {
+    nav:last-of-type {
+        display: block;
         position: absolute;
         top: 0;
         right: 0;
@@ -83,7 +87,7 @@
         transition: 0.3s ease-out;
         opacity: 0;
     }
-    .menu {
+    nav:last-of-type .menu {
         display: initial;
         text-align: left;
         position: absolute;
@@ -94,7 +98,7 @@
         left: 60px;
         font-family: sans-serif;
     }
-    .menu-item:not(:last-child) {
+    nav:last-of-type .menu-item:not(:last-child) {
         margin-bottom: 40px;
     }
     body {
