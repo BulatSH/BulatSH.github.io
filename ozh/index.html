@@ -149,13 +149,13 @@
             if (count == 0) {
                 body.style.overflow = "hidden";
                 menuWrap.style.opacity = "1"
-                menuWrap.style.right = "0";
+                menuWrap.style.width = "100%";
                 phoneMenuBtn.classList.add('close');
                 count = 1;
                 console.log(count);
             } else if (count == 1) {
                 body.style.overflowY = "auto";
-                menuWrap.style.right = "-100vw";
+                menuWrap.style.width = "0";
                 menuWrap.style.opacity = "0"
                 phoneMenuBtn.classList.remove('close');
                 count = 0;
