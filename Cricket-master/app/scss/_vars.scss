@@ -1,0 +1,44 @@
+$dark:#292929;
+$red:#D96C6C;
+$black-dark:#6C1515;
+$white-brown:#D99A6C;
+$white:#fff;
+$grey:#ABABAB;
+$black:#000000;
+$Rubic:'Rubik', sans-serif;
+$Root:'PT Root UI',sans-serif;
+@mixin for-xl {
+    @media (max-width: 1300px) { @content; }
+  }
+
+@mixin for-lg {
+    @media (max-width: 1200px) { @content; }
+  }
+  @mixin for-lit-desktop {
+    @media (max-width: 1050px) { @content; }
+  }
+  @mixin for-md-desktop{
+    @media (min-width: 1025px) { @content; }
+  }
+  @mixin for-md {
+    @media (max-width: 1024px) { @content; }
+  }
+  @mixin for-sm {
+    @media (max-width: 768px) { @content; }
+  }
+  @mixin for-tiny-tablet {
+    @media (max-width: 650px) { @content; }
+  }
+  @mixin for-md-mob{
+    @media (max-width: 550px) { @content; }
+  }
+  @mixin for-tiny-mob {
+    @media (max-width: 500px) { @content; }
+  }
+
+  @mixin for-min-mob {
+    @media (min-width: 650px) { @content; }
+  }
+  @mixin for-lit-mob {
+    @media (max-width: 350px) { @content; }
+    }
