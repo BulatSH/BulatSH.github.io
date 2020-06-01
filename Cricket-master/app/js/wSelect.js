@@ -35,7 +35,7 @@
                         var wSelect = $(this).data('wSelect');
 
                         if (wSelect && wSelect.id !== _self.id) {
-                            if (!wSelect.multiple) { wSelect.$optionsHolder.slideToggle(); }
+                            if (!wSelect.multiple) { wSelect.$optionsHolder.hide(); }
                             wSelect.onBlur();
                         }
                     });
@@ -113,7 +113,7 @@
         keydown: function(e) {
             // tab
             if (e.keyCode === 9) {
-                this.$optionsHolder.slideToggle();
+                this.$optionsHolder.hide();
                 this.onBlur();
             }
         },
@@ -121,7 +121,7 @@
         keyup: function(e) {
             // enter
             if (e.keyCode === 13) {
-                this.$optionsHolder.slideToggle();
+                this.$optionsHolder.hide();
             }
             // left, up, right, down
             else if (e.keyCode >= 37 && e.keyCode <= 40) {
@@ -154,7 +154,7 @@
                 this.$optionsHolder.css('top', newTop);
             }
 
-            this.$optionsHolder.slideToggle();
+            this.$optionsHolder.hide();
         },
 
         onFocus: function(className) {

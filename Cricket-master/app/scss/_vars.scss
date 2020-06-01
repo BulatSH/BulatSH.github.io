@@ -5,6 +5,8 @@ $white-brown:#D99A6C;
 $white:#fff;
 $grey:#ABABAB;
 $black:#000000;
+$event-future: #FBF5F0;
+$event-past: #F8F8F8;
 $Rubic:'Rubik', sans-serif;
 $Root:'PT Root UI',sans-serif;
 @mixin for-xl {
@@ -23,6 +25,9 @@ $Root:'PT Root UI',sans-serif;
   @mixin for-md {
     @media (max-width: 1024px) { @content; }
   }
+  @mixin for-lit-md {
+    @media (max-width: 850px) { @content; }
+  }
   @mixin for-sm {
     @media (max-width: 768px) { @content; }
   }
@@ -39,6 +44,9 @@ $Root:'PT Root UI',sans-serif;
   @mixin for-min-mob {
     @media (min-width: 650px) { @content; }
   }
+  @mixin for-medium-mob{
+    @media (max-width: 500px) { @content; }
+  }
   @mixin for-lit-mob {
-    @media (max-width: 350px) { @content; }
+    @media (max-width: 450px) { @content; }
     }
