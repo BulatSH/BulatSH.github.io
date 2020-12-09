@@ -3,7 +3,6 @@ body {
     font-family: "Roboto Mono", sans-serif;
     font-style: normal;
     font-weight: 600;
-    -webkit-overflow-scrolling: touch;
 }
 
 main {
