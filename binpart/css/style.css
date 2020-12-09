@@ -484,17 +484,29 @@ input::-moz-focus-outer {
     cursor: pointer;
     border-radius: 50%;
     display: block;
+    position: relative;
 }
 
-.contacts-list__link svg {
+.contacts-list__link div {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 19px;
+    margin: auto;z-index: 1;
+}
+
+.contacts-list__link div {
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
 }
 
-.contacts-list__link:hover svg {
-    -webkit-filter: drop-shadow(0px 0px 20px rgba(223, 251, 83, 0.8));
-    filter: drop-shadow(0px 0px 20px rgba(223, 251, 83, 0.8));
+.contacts-list__link:hover div {
+
+    -webkit-box-shadow: 0px 0px 30px 15px rgba(223, 251, 83, 0.8);
+    box-shadow: 0px 0px 30px 15px rgba(223, 251, 83, 0.8);
 }
 
 
