@@ -183,7 +183,6 @@ main {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    /* flex-wrap: wrap; */
 }
 
 .main-section__left-part {
@@ -303,11 +302,18 @@ h1 .h1__first {
 }
 
 .rangeslider {
-    background-image: url(../img/calcBg.svg) !important;
-    background-position: center center !important;
-    background-size: 100% auto !important;
-    background-repeat: no-repeat !important;
     position: relative;
+}
+
+.rangeslider-calc-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    padding-right: 2px;
+    z-index: 111;
 }
 
 .calculator-content form {
@@ -342,12 +348,20 @@ input::-moz-focus-outer {
     margin-top: -7px;
 }
 
+.rangeslider,
+.rangeslider__fill {
+    display: block;
+}
+
+.rangeslider {
+    position: relative;
+}
+
 .rangeslider__handle {
     border-radius: 50%;
     width: 45px;
     height: 45px;
-    background-color: #3D4151;
-    position: relative;
+    position: absolute;
     -webkit-box-shadow: 0px 2px 10px 2px #000000;
     box-shadow: 0px 2px 10px 2px #000000;
     border: none;
@@ -356,32 +370,18 @@ input::-moz-focus-outer {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     cursor: pointer;
+    background: none;
+    background-image: url(../img/calcCircle.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 99999;
     margin-top: -4px;
 }
 
 .rangeslider__handle:active {
-    background-image: url(../img/calcBg.svg) !important;
-    background-position: center center !important;
-    background-size: 100% auto !important;
-    background-repeat: no-repeat !important;
-    background-color: #3D4151;
-    background-image: none !important;
     -webkit-box-shadow: 0px 0px 10px rgba(223, 251, 83, 0.8);
     box-shadow: 0px 0px 10px rgba(223, 251, 83, 0.8);
-}
-
-.rangeslider__handle::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    width: 25px;
-    height: 25px;
-    background-color: #DFFB53;
-    border-radius: 50%;
 }
 
 .rangeslider__handle::after {
@@ -389,6 +389,7 @@ input::-moz-focus-outer {
 }
 
 .rangeslider__fill {
+    position: absolute;
     top: 0 !important;
     bottom: 0 !important;
     left: 0 !important;

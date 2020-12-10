@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     let $element = $('input[type="range"]');
     let $calcCount = $('#calc-count .calc-count__res');
 
@@ -19,8 +18,10 @@ $(document).ready(function() {
         $calcCount.text($calcCount.text() * $element.val());
     }
 
+    $(".rangeslider").append("<img src='img/calcBg.svg' alt='calcBg' class='rangeslider-calc-bg'>");
+
     let calcActiveWrap = $(".rangeslider__fill");
-    calcActiveWrap.append("<div id='calc-active'><img src='img/calcActive.svg' alt='calcActive' style></div>");
+    calcActiveWrap.append("<div id='calc-active'><img src='img/calcActive.svg' alt='calcActive'></div>");
 
     let calcActive = $('#calc-active');
 
@@ -41,10 +42,4 @@ $(document).ready(function() {
     });
 
     calcCalcActiveWidth();
-
-    let img = $('#calc-active img');
-    img.onload = function(){
-        alert( img.height );
-    }
-
 });

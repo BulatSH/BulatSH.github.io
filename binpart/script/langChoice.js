@@ -28,6 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     for (let i = 0; i < langListItem.length; i++) {
-        replaceLangs(i)
+        replaceLangs(i);
     }
 });
