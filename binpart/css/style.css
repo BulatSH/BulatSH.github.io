@@ -383,13 +383,9 @@ input::-moz-focus-outer {
     margin-top: -4px;
 }
 
-.rangeslider__handle:active {
+.rangeslider--active .rangeslider__handle {
     -webkit-box-shadow: 0px 0px 10px rgba(223, 251, 83, 0.8);
     box-shadow: 0px 0px 10px rgba(223, 251, 83, 0.8);
-}
-
-.rangeslider__handle::after {
-    display: none;
 }
 
 .rangeslider__fill {
