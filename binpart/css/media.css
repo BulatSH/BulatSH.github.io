@@ -367,7 +367,9 @@
         text-align: center;
     }
     .rangeslider__fill {
-        transform: translateY(-2px);
+        -webkit-transform: translateY(-2px);
+            -ms-transform: translateY(-2px);
+                transform: translateY(-2px);
     }
 }
 
@@ -542,7 +544,9 @@
 
 @media all and (max-width: 440px) {
     .rangeslider__fill {
-        transform: translateY(-1px);
+        -webkit-transform: translateY(-1px);
+            -ms-transform: translateY(-1px);
+                transform: translateY(-1px);
     }
 }
 

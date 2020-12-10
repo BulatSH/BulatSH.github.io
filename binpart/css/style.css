@@ -294,10 +294,11 @@ h1 .h1__first {
     padding-bottom: 20px;
     position: relative;
     z-index: 9999;
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -338,13 +339,16 @@ input::-moz-focus-outer {
 
 .calculator-buttons {
     margin-left: 38px;
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -ms-align-items: flex-start;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-top: -7px;
 }
 
@@ -397,8 +401,11 @@ input::-moz-focus-outer {
     background: none;
     overflow: hidden;
     border: 0;
-    box-shadow: none;
-    transform: translateY(-4px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+            transform: translateY(-4px);
 }
 
 .rangeslider--horizontal {
@@ -502,8 +509,8 @@ input::-moz-focus-outer {
 
 .contacts {
     padding-top: 50px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#1C2025), color-stop(43.75%, rgba(28, 32, 37, 0)), to(rgba(28, 32, 37, 0.828125)));
     background: -o-linear-gradient(top, #1C2025 0%, rgba(28, 32, 37, 0) 43.75%, rgba(28, 32, 37, 0.828125) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#1C2025), color-stop(43.75%, rgba(28, 32, 37, 0)), to(rgba(28, 32, 37, 0.828125)));
     background: linear-gradient(180deg, #1C2025 0%, rgba(28, 32, 37, 0) 43.75%, rgba(28, 32, 37, 0.828125) 100%);
 }
 
@@ -755,8 +762,8 @@ h2 {
 /* how-it-works */
 
 .how-it-works {
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(3.82%, #1C2025), color-stop(97.12%, rgba(28, 32, 37, 0)));
     background: -o-linear-gradient(bottom, #1C2025 3.82%, rgba(28, 32, 37, 0) 97.12%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(3.82%, #1C2025), color-stop(97.12%, rgba(28, 32, 37, 0)));
     background: linear-gradient(0deg, #1C2025 3.82%, rgba(28, 32, 37, 0) 97.12%);
     padding-top: 50px;
 }
@@ -925,20 +932,20 @@ h2 {
 }
 
 .compatibility-list__item_violet {
-    background: -webkit-gradient(linear, left top, right top, from(#5532E0), color-stop(96.1%, rgba(82, 61, 171, 0.921875)));
     background: -o-linear-gradient(left, #5532E0 0%, rgba(82, 61, 171, 0.921875) 96.1%);
+    background: -webkit-gradient(linear, left top, right top, from(#5532E0), color-stop(96.1%, rgba(82, 61, 171, 0.921875)));
     background: linear-gradient(90deg, #5532E0 0%, rgba(82, 61, 171, 0.921875) 96.1%);
 }
 
 .compatibility-list__item_green {
-    background: -webkit-gradient(linear, left top, right top, from(#84DD9D), color-stop(94.21%, rgba(187, 247, 204, 0.859375)));
     background: -o-linear-gradient(left, #84DD9D 0%, rgba(187, 247, 204, 0.859375) 94.21%);
+    background: -webkit-gradient(linear, left top, right top, from(#84DD9D), color-stop(94.21%, rgba(187, 247, 204, 0.859375)));
     background: linear-gradient(90deg, #84DD9D 0%, rgba(187, 247, 204, 0.859375) 94.21%);
 }
 
 .compatibility-list__item_yellow {
-    background: -webkit-gradient(linear, left top, right top, color-stop(-1.64%, #DFFB53), color-stop(85.34%, #C4D139));
     background: -o-linear-gradient(left, #DFFB53 -1.64%, #C4D139 85.34%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(-1.64%, #DFFB53), color-stop(85.34%, #C4D139));
     background: linear-gradient(90deg, #DFFB53 -1.64%, #C4D139 85.34%);
 }
 
@@ -948,8 +955,8 @@ h2 {
 }
 
 .compatibility-list__item_blue {
-    background: -webkit-gradient(linear, left top, right top, from(#B5DBFF), color-stop(95.59%, #C0C8E2));
     background: -o-linear-gradient(left, #B5DBFF 0%, #C0C8E2 95.59%);
+    background: -webkit-gradient(linear, left top, right top, from(#B5DBFF), color-stop(95.59%, #C0C8E2));
     background: linear-gradient(90deg, #B5DBFF 0%, #C0C8E2 95.59%);
 }
 
@@ -1017,8 +1024,8 @@ h2 {
 
 .top {
     padding-top: 50px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(3.82%, #1C2025), color-stop(97.12%, rgba(28, 32, 37, 0)));
     background: -o-linear-gradient(#1C2025 3.82%, rgba(28, 32, 37, 0) 97.12%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(3.82%, #1C2025), color-stop(97.12%, rgba(28, 32, 37, 0)));
     background: linear-gradient(#1C2025 3.82%, rgba(28, 32, 37, 0) 97.12%);
 }
 
