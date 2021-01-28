@@ -3164,6 +3164,7 @@ footer .container {
 
 .modal-wrapper {
   position: absolute;
+  position: relative;
   z-index: 9999;
   top: 0;
   right: 0;
@@ -3199,6 +3200,7 @@ html, body {
 
 .blocker {
   position: absolute;
+  position: relative;
   z-index: 10000;
   top: 0;
   right: 0;
@@ -3496,6 +3498,9 @@ html, body {
   margin: 0 auto;
   max-width: 384px; }
 
+.post-form__code-group br {
+  display: none; }
+
 .form_input {
   padding: 17px 30px;
   border: 2px solid #404040;
@@ -3545,6 +3550,9 @@ html, body {
 .form_input.mail-exist {
   border-color: #F24545; }
 
+.post-form__code-group {
+  height: 70px; }
+
 .code_char {
   display: block !important;
   top: 0 !important;
@@ -3567,6 +3575,24 @@ html, body {
   -o-transition: none;
   transition: none;
   overflow: hidden; }
+
+.post-form__code-group .code_char:nth-child(1) {
+  left: 0; }
+
+.post-form__code-group .code_char:nth-child(2) {
+  left: 14%; }
+
+.post-form__code-group .code_char:nth-child(3) {
+  left: 31%; }
+
+.post-form__code-group .code_char:nth-child(4) {
+  left: 48%; }
+
+.post-form__code-group .code_char:nth-child(5) {
+  left: 66%; }
+
+.post-form__code-group .code_char:nth-child(6) {
+  right: 0; }
 
 .code_char-box {
   position: relative;

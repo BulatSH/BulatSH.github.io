@@ -154,51 +154,69 @@ $(function () {
 		$inp.eq(0).trigger('input');
 	}
 
-	$(".modal-wrapper").modal({
-		escapeClose: false,
-		clickClose: false,
-		showClose: false
-	});
+	// $(".modal-wrapper").modal({
+	// 	escapeClose: false,
+	// 	clickClose: false,
+	// 	showClose: false
+	// });
 	
-	let $inps = $('#verify_form .code_char');
+	/*let inputSet = document.querySelectorAll('.post-form__code-group .code_char');
+	inputSet.forEach(function(elem){
+		elem.addEventListener('input', function(){
+			let val = this.value.replace(/\D/g, '');
+			let that = this;
+			if (val.length > 1) val = val.substr(0, 1);
+			this.value = val;
+			if (val.length === 1 && this.nextElementSibling) {
+				setTimeout(function() {
+					that.nextElementSibling.select();
+				});
+			};
+		});
+		elem.addEventListener('focus', function(){
+			this.select();
+		})
+	});*/
 
+	let $inps = $('#verify_form .code_char');
 	if ($inps.length) {
-		$inps.eq(0).select();
 		$('html').addClass('fixfixed');
 		$('body').addClass('fixfixed');
 		$('.blocker').addClass('fixfixed');
 		$('.modal-wrapper.modal').addClass('fixfixed');
-		var isInput = true;
 		$inps.on({
 			'input': function () {
-				let val = $(this).val().replace(/\D/g, '');
+				let val = $(this).val().replace(/\D/g, '').trim();
 				let $that = $(this);
 				if (val.length > 1) val = val.substr(0, 1);
 				$(this).val(val);
-				if (val.length === 1 && $(this).next('input.code_char').length) setTimeout(() => {$that.next('input.code_char')[0].select(), 100});
-				// if (val.length === 1 && $(this).next('input.code_char').length) setTimeout(() => {$that.next('input.code_char').select(), 100});
-				// if (val.length === 1 && $(this).next('input.code_char').length) setTimeout(() => {$that.next('input.code_char').focus()});
-				console.log('onInput   ', $that.next('input.code_char')[0]);
-
-				let $btn = $('form.post-form button');
-				if ($('input.code_char').toArray().filter(function (i) {
-					return i.value.length;
-				}).length === 6) {
-					!$btn.hasClass('_valid') && $btn.addClass('_valid');
-				} else {
-					$btn.hasClass('_valid') && $btn.removeClass('_valid');
+				if (val.length === 1 && $(this).next('input.code_char').length) {
+					setTimeout(() => {$that.next('input.code_char').trigger('click')});
 				}
+				
+				// if (val.length === 1 && $(this).next('input.code_char').length) setTimeout(() => {$that.next('input.code_char').select()});
+				// if (val.length === 1 && $(this).next('input.code_char').length) setTimeout(() => {$that.next('input.code_char').focus()});
+				// console.log('onInput   ', $that.next('input.code_char')[0]);
+
+				// let $btn = $('form.post-form button');
+				// if ($('input.code_char').toArray().filter(function (i) {
+				// 	return i.value.length;
+				// }).length === 6) {
+				// 	!$btn.hasClass('_valid') && $btn.addClass('_valid');
+				// } else {
+				// 	$btn.hasClass('_valid') && $btn.removeClass('_valid');
+				// }
 			},
 			'keyup': function (ev) {
 				let $that = $(this);
 				if (ev.keyCode === 8 && !$(this).val() && $(this).prev('input.code_char').length) {
-					setTimeout(() => {$that.prev('input.code_char')[0].select(), 100});
+					setTimeout(() => {$that.prev('input.code_char').trigger('click')});
 					// $(this).prev('input.code_char').focus();
 				} else if (ev.keyCode === 37 && $(this).prev('input.code_char').length) {
-					setTimeout(() => {$that.prev('input.code_char')[0].select(), 100});
+					setTimeout(() => {$that.prev('input.code_char').trigger('click')});
 					// $(this).prev('input.code_char').focus();
-				} else if (ev.keyCode === 39 && $(this).next('input.code_char')[0].length) {
-					setTimeout(() => {$that.next('input.code_char')[0].select(), 100});
+				} else if (ev.keyCode === 39 && $(this).next('input.code_char').length) {
+					setTimeout(() => {$that.next('input.code_char').trigger('click')});
 					// $(this).next('input.code_char').focus();
 				}
 			},
@@ -499,34 +517,3 @@ $(function () {
 		});
 	}
 });
-
-function imts(imt) {
-	if (imt < 15.99)
-	{
-		return "Дефицит массы тела";
-	}
-	else if (imt < 18.5)
-	{
-		return "Ниже нормального веса";
-	}
-	else if (imt < 25)
-	{
-		return "Нормальный вес";
-	}
-	else if (imt < 30)
-	{
-		return "Избыточный вес";
-	}
-	else if (imt < 35)
-	{
-		return "Ожирение I степени";
-	}
-	else if (imt < 40)
-	{
-		return "Ожирение II степени";
-	}
-	else
-	{
-		return "Ожирение III степени";
-	}
-}
