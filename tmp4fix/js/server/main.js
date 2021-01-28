@@ -154,11 +154,11 @@ $(function () {
 		$inp.eq(0).trigger('input');
 	}
 
-	$(".modal-wrapper").modal({
-		escapeClose: false,
-		clickClose: false,
-		showClose: false
-	});
+	// $(".modal-wrapper").modal({
+	// 	escapeClose: false,
+	// 	clickClose: false,
+	// 	showClose: false
+	// });
 	
 	/*let inputSet = document.querySelectorAll('.post-form__code-group .code_char');
 	inputSet.forEach(function(elem){
@@ -221,13 +221,9 @@ $(function () {
 				}
 			},
 			'click': function() {
-				$(this).select();
-			},
-			'select': function() {
-				console.log('onSelect');
-			},
-			'focus': function() {
-				console.log('onFocus');
+				if ($(this).val()) {
+					$(this).select()
+				} else $(this).focus();
 			}
 		});
 	}
