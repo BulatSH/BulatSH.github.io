@@ -3499,7 +3499,7 @@ html, body {
   max-width: 384px; }
 
 .post-form__code-group br {
-  display: none; }
+  display: none !important; }
 
 .form_input {
   padding: 17px 30px;
@@ -3566,7 +3566,7 @@ html, body {
   border-radius: 4px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 57px;
   outline: none;
   float: left;
   height: 57px;
@@ -3575,6 +3575,9 @@ html, body {
   -o-transition: none;
   transition: none;
   overflow: hidden; }
+
+.code_char br {
+  display: none !important; }
 
 .post-form__code-group .code_char:nth-child(1) {
   left: 0; }

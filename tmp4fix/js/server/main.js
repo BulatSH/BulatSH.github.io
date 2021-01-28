@@ -154,11 +154,11 @@ $(function () {
 		$inp.eq(0).trigger('input');
 	}
 
-	$(".modal-wrapper").modal({
-		escapeClose: false,
-		clickClose: false,
-		showClose: false
-	});
+	// $(".modal-wrapper").modal({
+	// 	escapeClose: false,
+	// 	clickClose: false,
+	// 	showClose: false
+	// });
 	
 	/*let inputSet = document.querySelectorAll('.post-form__code-group .code_char');
 	inputSet.forEach(function(elem){
